@@ -1,0 +1,392 @@
+/*p:nth-child(3) {
+    font-family: 'GothamPro-Bold';
+}
+p {
+    font-family: 'GothamPro';
+}
+p:nth-child(2) {
+    font-family: 'GothamPro-Medium';
+}*/
+
+.wrapper_index {
+    opacity: 99%;
+    background: url(../img/bg/index.svg) right top no-repeat;
+}
+
+//Слайдер
+.chance {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-left: 80px;
+    position: relative;
+    span {
+        display: inline-block;
+        width: 280px;
+        height: 170px;
+        overflow: visible;
+        position: absolute;
+        bottom: 30px;
+        right: 353px;
+        background-image: url(../img/test/2.png), url(../img/test/3.png), url(../img/test/4.svg);
+        background-position: bottom, 100px 60px, bottom left;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+    .slick-dots {
+        z-index: 100;
+        position: absolute;
+        bottom: 35px;
+    }
+    .slick-dots li {
+        margin: 0;
+    }
+    .slick-dots li button:before {
+        color: #fff;
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #fff !important;
+    }
+}
+
+.chance_text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    p {
+        color: $Blue;
+        font-size: 48px;
+        font-family: 'GothamPro-Bold';
+        margin: 18px 0;
+    }
+    p:nth-child(1) {
+        font-size: 24px;
+        margin-left: 95px;
+    }
+    p:nth-child(3) {
+        margin-left: 140px;
+    }
+    p:nth-child(4) {
+        margin-left: 170px;
+    }
+}
+
+.chance_wrap {
+    @include flexbox();
+    @include justify-content(space-between);
+}
+
+.chance_slide {
+    width: 820px;
+    height: 340px;
+    overflow: hidden;
+}
+
+.slide_item {
+    position: relative;
+    width: 820px;
+    height: 340px;
+    border-radius: 30px;
+    outline: 0;
+    img {
+        width: 100%;
+    }
+}
+
+.slide_shadow {
+    position: absolute;
+    width: 660px;
+    height: 340px;
+    top: 0;
+    left: 0;
+    background: url(../img/slide/1.png) right top no-repeat;
+}
+
+//шарик
+.chance_help {
+    width: 400px;
+    height: 350px;
+    background: url(../img/help.png) -60px -28px no-repeat;
+    transition: 200ms;
+    cursor: pointer;
+    border-radius: 30px;
+    transition:  0.5s;
+}
+.chance_help:hover {
+    margin-top: 10px; 
+}
+
+//Срочный сбор средств
+.urgent_content {
+    @include flexbox();
+    @include justify-content(space-between);
+    padding: 0 80px;
+    background-color: #ADE5FF;
+    height: 340px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.urgent_title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'GothamPro-Bold';
+    letter-spacing: 1.8px;
+    margin-bottom: 25px;
+    color: #333333;
+}
+
+//Имя, диагноз и сумма
+.urgent_info {
+    height: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include align-items(flex-start);
+    padding: 75px 0 60px;
+}
+
+.urgent_text {
+    h1 {
+        font-family: 'GothamPro-Bold';
+        font-size: 32px;
+        color: $Blue;
+        padding: 0;
+        margin: 0;
+    }
+    p {
+        font-size: 12px;
+        font-family: 'GothamPro';
+        margin: 7px 0;
+        letter-spacing: 0.3px;
+    }
+}
+
+.urgent_progress {
+    display: inline-block;
+    padding: 0 20px;
+    height: 50px;
+    background-color: #DD4B39;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 50px;
+    font-family: 'GothamPro-Bold';
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+//Фото и финтиклюшки
+.urgent_photo {
+    width: 340px;
+    height: 100%;
+    position: relative;
+    padding-top: 30px;
+    img {
+        height: 100%;
+    }
+    span {
+        display: inline-block;
+        width: 280px;
+        height: 170px;
+        overflow: visible;
+        position: absolute;
+        bottom: -65px;
+        left: -82px;
+        background: url(../img/test/3.png) right no-repeat;
+        background-image: url(../img/test/2.png), url(../img/test/3.png);
+        background-position: bottom, 80px 70px;
+        background-repeat: no-repeat, no-repeat;
+    }
+}
+
+//Подробности и кнопка
+.urgent_details {
+    height: 100%;
+    width: 400px;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include align-items(flex-start);
+    padding: 55px 0 60px;
+    p {
+        line-height: 28px;
+        letter-spacing: 0.3px;
+    }
+}
+
+.urgent_button {
+    height: 50px;
+    padding: 0 85px;
+    background-color: $lBlue;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 50px;
+    font-family: 'GothamPro-Bold';
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 200ms;
+}
+
+.urgent_button:hover {
+    background-color: darken($lBlue, 10%);
+}
+
+//Новости
+.news {
+    h2 {
+        color: #333333;
+        font-size: 24px;
+        font-family: 'GothamPro-Bold';
+    }
+}
+.news_wrapper {
+    margin-top: 40px;
+    width: 100%;
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    .news-block {
+        margin: 0;
+    }
+}
+
+.news_item {
+    width: 220px;
+    height: 315px;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include align-items(space-between);
+}
+
+//в ссылке лежит картинка и заголовок
+.news_link {
+    text-decoration: none;
+}
+.news_link:hover .news_title {
+    color: darken($Blue, 15%);
+}
+
+.news_img-wrap {
+    width: 100%;
+    height: 140px;
+    border-radius: 30px;
+    overflow: hidden;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    img {
+        width: 100%;
+    }
+}
+
+.news_border {
+    border: 2px solid #C4C4C4;
+}
+
+//заголовок новости
+.news_title {
+    margin-top: 23px;
+    color: $Blue;
+    line-height: 26px;
+    font-family: 'GothamPro-Bold';
+    font-size: 18px;
+    transition: 200ms;
+}
+
+//текст новости
+.news_content {
+    margin: 0;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+//подписка и нужна ваша помощь
+.subscribe {
+    width: 100%;
+    height: 370px;
+    background-color: #F7F7F7;
+    padding: 40px 0;
+    margin: 80px 0 80px;
+    .container {
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(space-between);
+    }
+}
+
+.subscribe_item {
+    width: 530px;
+    height: 285px;
+    padding-bottom: 20px;
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include align-items(flex-start);
+    border-right: 1px solid #CCCCCC;
+    p {
+        width: 510px;
+        line-height: 26px;
+        letter-spacing: 0.3px;
+        margin-top: -25px;
+    }
+    /*Адрес электронной почты **/
+    span {
+        margin-bottom: -50px;
+        color: #000000;
+        font-size: 13px;
+    }
+}
+
+.subscribe_button {
+    height: 50px;
+    width: 220px;
+    display: inline-block;
+    background-color: $lBlue;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 50px;
+    font-family: 'GothamPro-Bold';
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.subscribe_button:hover {
+    background-color: darken($lBlue, 10%);
+}
+
+.subscribe_item:nth-child(2) {
+    margin-right: 50px;
+    border: none;
+}
+
+.subscribe_title {
+    color: $Blue;
+    font-size: 24px;
+    margin-top: 15px;
+    letter-spacing: 0.4px;
+}
+
+.subscribe_form {
+    width: 510px;
+    input {
+        border: 0;
+        outline: 0;
+    }
+    .subscribe_button {
+        width: 220px;
+    }
+}
+
+.subscribe_input {
+    padding-left: 20px;
+    width: 280px;
+}

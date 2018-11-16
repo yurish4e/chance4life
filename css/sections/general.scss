@@ -1,0 +1,18 @@
+//social
+.social {
+    width: 78px;
+    @include flexbox();
+    @include justify-content(space-between);
+}
+.social_fb, .social_in {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/ico/fb.svg) center no-repeat;
+}
+.social_in {
+    background: url(../img/ico/in.svg) center no-repeat;
+}
+.social_in:hover {
+    fill:red;
+}

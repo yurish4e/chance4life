@@ -1,0 +1,110 @@
+.header {
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+//nav 
+.nav {
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+    background-size: 70%;
+}
+.nav_logo {
+    width: 90px;
+    height: 50px;
+    background: url(../img/logo.svg) center no-repeat;
+}
+.nav_menu {
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+    background: url(../img/nav.svg) center no-repeat;
+    width: 700px;
+    height: 80px; 
+    padding: 0 35px 0 60px;
+    margin-left: 50px;
+}
+// menu
+.menu {
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+    width: 545px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+} 
+.menu_item {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    padding: 0 5px;
+    height: 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    a {
+        font-family: 'GothamPro-Bold';
+        font-size: 12px;
+        text-decoration: none;
+        color: $Blue;
+        transition: 200ms;
+        height: 80px;
+        line-height: 80px;
+    }
+    a:hover{
+        color: #fff;
+    }
+}
+.menu_item_current {
+    border-bottom: 5px solid #fff;
+    padding-top: 5px;
+    a {
+        color: #fff;
+    }
+}
+.nav_lang {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: $Blue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    line-height: 32px;
+    font-family: 'GothamPro-Bold';
+    transition: 200ms;
+}
+.nav_lang:hover {
+    background-color: darken($Blue, 10%);
+}
+.nav_help {
+    background-color: $Blue;
+    display: inline-block;
+    width: 190px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'GothamPro-Bold';
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: 200ms;
+}
+.nav_help:hover {
+    background-color: darken($Blue, 10%);
+}
+
+
+
+
+
+
+

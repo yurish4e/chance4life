@@ -1,0 +1,54 @@
+.navigation_join {
+    width: 780px;
+    margin: 0 auto 80px;
+    padding: 0;
+    @include flexbox();
+    @include justify-content(space-between);
+    overflow: hidden;
+    .navigation_item {
+    width: 180px;
+}
+.navigation_item::after {
+    width: 405px;
+    left: 185px;
+}
+}
+
+//volunteer
+.volunteer {
+    margin-bottom: 80px;
+    @include flexbox();
+    @include justify-content(space-between);
+}
+.volunteer_left {
+    width: 550px;
+    img {
+        width: 100%;
+    }
+}
+.volunteer_right {
+       width: 600px; 
+    margin-top: -7px;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    p {
+        margin: 0;
+        line-height: 26px;
+        letter-spacing: 0.9px;
+        font-family: 'GothamPro-Medium';
+        color: #4694B8;
+    }
+    }
+//форма обратной связи
+.join_contacts {
+    @include flexbox();
+    @include justify-content(center);
+    background-color: #fff;
+    width: 700px;
+    margin: 0 auto 100px;
+    -webkit-box-shadow: 0px 40px 80px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 40px 80px 0px rgba(0,0,0,0.1);
+box-shadow: 0px 40px 80px 0px rgba(0,0,0,0.1);
+}
