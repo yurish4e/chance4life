@@ -1,0 +1,137 @@
+@media (max-width: 1080px) {
+    //не выводим для мобильной версии
+    .mobile {
+        display: inline-block;
+    }
+    .pc, .nav_help {
+        display: none;
+    }
+    //общие настройки
+    .wrapper {
+        min-width: 320px;
+    }
+.container {
+    width: 320px;
+    overflow: hidden;
+}
+    //шапка
+    .header {
+        padding-top: 15px;
+        overflow: visible;
+        width: 100%;
+    }
+    .nav_logo {
+        height: 45px;
+        background-size: 80%;
+        margin-left: 5px;
+    }
+    .nav_lang {
+        position: relative;
+        color: $Blue;
+        background-color: transparent;
+    }
+    .nav_lang::after {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../img/ico/lang.svg) center no-repeat;
+        position: absolute;
+        top: 5px;
+    }
+    .nav_lang:hover {
+        background-color: transparent;
+    }
+    .menu_open {
+        position: absolute;
+        top: 2px;
+        right: 15px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url(../img/ico/menu_dark.svg) center no-repeat;
+    }
+    //навигация
+    .nav_menu {
+        width: 212px;
+        height: 45px;
+        padding-left: 100px;
+        background-position: left;
+        background-size: 150%;
+        margin: 0;
+        position: relative;
+        overflow: visible;
+    }    
+    .menu {
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(space-between);
+        /*display: none;*/
+        height: 0;
+        width: 210px;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        z-index: 50;
+        background-color: $lBlue;
+        border-radius: 10px 0 0 10px;
+        transition: 200ms;
+        overflow: hidden;
+    }
+    //стиль для развёртывания меню
+    .menu_visible {
+        height: 160px;
+        /*display: block;
+        opacity: 1;*/
+    }
+    .menu_item {
+        width: 210px;
+        height: 30px;
+        z-index: 50;
+        a {
+            line-height: 30px;
+            height: 30px;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+        }
+        
+    }
+    .menu_item_current {
+        border: 0;
+        a {
+           color: $Blue; 
+        }
+        
+    }
+    
+    //footer
+    .footer {
+        min-width: 320px;
+        border-radius: 30px 30px 0 0;
+        background-image: none;
+        background-color: #5ABDEB;
+        
+        z-index: 10;
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 10px 35px;
+            @include flex-direction(column);
+        }
+    }
+    .footer_item {
+        border: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .footer_item:nth-child(3) {
+        padding: 10px 0 0 150px;
+        margin-top: -180px;
+    }
+    .developed {
+        width: 230px;
+        background-position: 120px 30px;
+    }
+}

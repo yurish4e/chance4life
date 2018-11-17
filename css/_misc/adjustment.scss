@@ -4,12 +4,16 @@ $footer-height: 260px;
 $container-width: 1180px;
 $lBlue: #5ABDEB;
 $Blue: #366880;
+$hBlue: #385D6E;
 * {
     box-sizing: border-box; 
 }
 /*.mobile {
         display: none !important;
     }*/
+.mobile {
+    display: none;
+}
 body, html {
     width: 100%;
     height: 100%;

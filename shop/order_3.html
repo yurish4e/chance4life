@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="wrapper wrapper_about">
+    <div class="wrapper">
 
         <!-- header -->
         <header class="header container">
@@ -48,36 +48,42 @@
 
         <!-- main content -->
         <div class="container">
-                <ul class="navigation_kids navigation_shop navigation_shop_single">
+                <ul class="navigation_kids navigation_shop">
                     <li class="navigation_item">
                         <a href="about_thanks.html" class="navigation_link">Продолжить покупки</a>
                     </li>
+                    <li class="navigation_item">
+                        <a href="about_thanks.html" class="navigation_link">Корзина</a>
+                        <!--счётчик корзины-->
+                        <span class="navigation_cart">5</span>
+                    </li>
+                    <li class="navigation_item navigation_item_active">
+                        <a href="about_thanks.html" class="navigation_link">Оформление заказа</a>
+                    </li>
+                    <li class="navigation_item navigation_item_last">
+                        <a href="about_thanks.html" class="navigation_link">Оплатить заказ</a>
+                    </li>
                 </ul>
-                <div class="unit">
-                    <div class="unit_left">
-                        <img src="../img/test/shop/image2.png" alt="">
-                        <img src="../img/test/shop/image2.png" alt="">
-                        <img src="../img/test/shop/image2.png" alt="">
-                        <img src="../img/test/shop/image2.png" alt="">
-                        <img src="../img/test/shop/image2.png" alt="">
-                    </div>
-                    <div class="unit_right">
-                        <h3>Декоративные интерьерные деревянные картинки</h3>
-                        <h2>₪45</h2>
-                        <span>Категории: <a href="">Украшения</a>, <a href="">Подарки</a></span>
-                        <div class="unit_color">
-                            <div class="color_item color_item_active"></div>
-                            <div class="color_item"></div>
-                            <div class="color_item"></div>
-                            <div class="color_item"></div>
-                        </div>
-                        <div class="unit_buttons">
-                            <a href="#" class="unit_buy">Купить</a>
-                            <a href="#" class="unit_cart">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-               
+                 <form action="" method="post" class="order_form">
+                               <input class="input_marg" type="text" name="name" placeholder="Имя*" >
+                               <input type="text" name="surname" placeholder="Фамилия*" >
+                               <input type="text" name="company" placeholder="Название компании*" class="input_full">
+                               <select class="contacts_select input_marg">
+                                  <option>Тема обращения*</option>
+                                  <option>Пункт 2</option>
+                                </select>
+                               <input type="text" name="adress" placeholder="Адрес (дом, улица)*">
+                               <input type="text" name="adress" placeholder="Населённый пункт*" class="input_marg">
+                               <input type="text" name="adress" placeholder="Область / регион*">
+                               <input type="text" name="phone" placeholder="Телефон*" class="input_marg">
+                               <input type="text" name="email" placeholder="E-mail*">
+                               <textarea name="mail" id="" cols="30" rows="10" placeholder="Комментарии*"></textarea>
+                               <div class="order_bottom">
+                                   <a href="" class="order_register">Зарегистрировать Вас?</a>
+                               <input type="submit" value="Продолжить">
+                               </div>
+                               
+                           </form>
                 
         </div>
         <!-- /container -->

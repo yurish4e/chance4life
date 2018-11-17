@@ -16,5 +16,8 @@
      $('.personal_info').click(function () {
          $(".personal_full").toggleClass("personal_show", 250, "easeOutSine");
      });
+     $('.menu_open').click(function () {
+         $(".menu").toggleClass("menu_visible");
+     });
  });
 

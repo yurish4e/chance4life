@@ -5,8 +5,14 @@
     .social_fb {
         background: url(../img/ico/fb_white.svg) center no-repeat;
     }
+    .social_fb:hover {
+        background: url(../img/ico/fb.svg) center no-repeat;
+    }
     .social_in {
         background: url(../img/ico/in_white.svg) center no-repeat;
+    }
+    .social_in:hover {
+        background: url(../img/ico/in.svg) center no-repeat;
     }
 }
 
@@ -93,6 +99,10 @@
             font-size: 10px;
             text-align: left;
             color: #fff;
+            transition: 200ms;
+        }
+        a:hover {
+            color: #366880;
         }
     }
 }
@@ -121,7 +131,7 @@
     transition: 200ms;
 }
 .footer_button:hover {
-    background-color: darken($Blue, 10%);
+    background-color: #366880;
 }
 .developed {
     width: 300px;

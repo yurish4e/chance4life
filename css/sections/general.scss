@@ -9,10 +9,14 @@
     width: 24px;
     height: 24px;
     background: url(../img/ico/fb.svg) center no-repeat;
+    transition: 200ms;
 }
 .social_in {
     background: url(../img/ico/in.svg) center no-repeat;
 }
+.social_fb:hover {
+    background: url(../img/ico/fb_dark.svg) center no-repeat;
+}
 .social_in:hover {
-    fill:red;
+    background: url(../img/ico/in_dark.svg) center no-repeat;
 }

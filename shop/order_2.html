@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="wrapper wrapper_about">
+    <div class="wrapper">
 
         <!-- header -->
         <header class="header container">
@@ -48,36 +48,93 @@
 
         <!-- main content -->
         <div class="container">
-                <ul class="navigation_kids navigation_shop navigation_shop_single">
+                <ul class="navigation_kids navigation_shop">
                     <li class="navigation_item">
                         <a href="about_thanks.html" class="navigation_link">Продолжить покупки</a>
                     </li>
+                    <li class="navigation_item navigation_item_active">
+                        <a href="about_thanks.html" class="navigation_link">Корзина</a>
+                        <!--счётчик корзины-->
+                        <span class="navigation_cart">5</span>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="about_thanks.html" class="navigation_link">Оформление заказа</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="about_thanks.html" class="navigation_link">Оплатить заказ</a>
+                    </li>
                 </ul>
-                <div class="unit">
-                    <div class="unit_left">
-                        <img src="../img/test/shop/image2.png" alt="">
-                        <img src="../img/test/shop/image2.png" alt="">
-                        <img src="../img/test/shop/image2.png" alt="">
-                        <img src="../img/test/shop/image2.png" alt="">
-                        <img src="../img/test/shop/image2.png" alt="">
-                    </div>
-                    <div class="unit_right">
-                        <h3>Декоративные интерьерные деревянные картинки</h3>
-                        <h2>₪45</h2>
-                        <span>Категории: <a href="">Украшения</a>, <a href="">Подарки</a></span>
-                        <div class="unit_color">
-                            <div class="color_item color_item_active"></div>
-                            <div class="color_item"></div>
-                            <div class="color_item"></div>
-                            <div class="color_item"></div>
-                        </div>
-                        <div class="unit_buttons">
-                            <a href="#" class="unit_buy">Купить</a>
-                            <a href="#" class="unit_cart">В корзину</a>
-                        </div>
-                    </div>
+                <div class="cart_wrapper">
+                    <ul class="cart_list">
+                        <li class="cart_item">
+                            <div class="cart_img_wrapper">
+                                <img src="../img/test/shop/image.png" alt="">
+                            </div>
+                            <h3>Декоративная шкатулка «Весеннее настроение»</h3>
+                            <div class="cart_count">
+                                <span class="count_plus">+</span>
+                                <span class="count_value">2</span>
+                                <span class="count_minus">-</span>
+                            </div>
+                            <div class="cart_price">
+                                <span class="price_value">₪100</span>
+                            </div>
+                            <div class="cart_remove"></div>
+                        </li>
+                        <li class="cart_item">
+                            <div class="cart_img_wrapper">
+                                <img src="../img/test/shop/image.png" alt="">
+                            </div>
+                            <h3>Декоративная шкатулка «Весеннее настроение»</h3>
+                            <div class="cart_count">
+                                <span class="count_plus">+</span>
+                                <span class="count_value">2</span>
+                                <span class="count_minus">-</span>
+                            </div>
+                            <div class="cart_price">
+                                <span class="price_value">₪100</span>
+                            </div>
+                            <div class="cart_remove"></div>
+                        </li>
+                        <li class="cart_item">
+                            <div class="cart_img_wrapper">
+                                <img src="../img/test/shop/image.png" alt="">
+                            </div>
+                            <h3>Декоративная шкатулка «Весеннее настроение»</h3>
+                            <div class="cart_count">
+                                <span class="count_plus">+</span>
+                                <span class="count_value">1</span>
+                                <span class="count_minus">-</span>
+                            </div>
+                            <div class="cart_price">
+                                <span class="price_value">₪100</span>
+                            </div>
+                            <div class="cart_remove"></div>
+                        </li>
+                        <li class="cart_item">
+                            <div class="cart_img_wrapper">
+                                <img src="../img/test/shop/image.png" alt="">
+                            </div>
+                            <h3>Декоративная шкатулка «Весеннее настроение»</h3>
+                            <div class="cart_count">
+                                <span class="count_plus">+</span>
+                                <span class="count_value">50</span>
+                                <span class="count_minus">-</span>
+                            </div>
+                            <div class="cart_price">
+                                <span class="price_value">₪100</span>
+                            </div>
+                            <div class="cart_remove"></div>
+                        </li>
+                    </ul>
+                    
                 </div>
-               
+               <div class="cart_buttons">
+                   <div class="cart_amount">
+                       <span>Сумма заказа:</span><span>400₪</span>
+                   </div>
+                   <a href="" class="cart_buy">Оформить заказ</a>
+               </div>
                 
         </div>
         <!-- /container -->

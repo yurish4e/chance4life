@@ -80,7 +80,7 @@
     transition: 200ms;
 }
 .nav_lang:hover {
-    background-color: darken($Blue, 10%);
+    background-color: $hBlue;
 }
 .nav_help {
     background-color: $Blue;
@@ -99,7 +99,7 @@
     transition: 200ms;
 }
 .nav_help:hover {
-    background-color: darken($Blue, 10%);
+    background-color: $hBlue;
 }
 
 
