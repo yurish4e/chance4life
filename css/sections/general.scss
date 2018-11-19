@@ -1,3 +1,25 @@
+//фоны
+.wrapper_about {
+    background-image: url(../img/bg/art.svg), url(../img/bg/art_circle.svg), url(../img/bg/art_circle_smaller.svg), url(../img/bg/art_circle_smaller.svg),
+    url(../img/bg/art_small.svg), 
+    url(../img/bg/art_circle_small.svg), 
+    url(../img/bg/art_circle_smallest.svg), 
+    url(../img/bg/index.svg);
+    background-position: 
+        0 1000px, 
+        0 1100px, 
+        118px 325px, 
+        350px 1200px, 
+        right 415px, 
+        right 50px top 915px, 
+        right 50px top 985px, 
+        right top;
+    background-repeat: no-repeat;
+} 
+.wrapper_index {
+    opacity: 99%;
+    background: url(../img/bg/index.svg) right top no-repeat;
+}
 //social
 .social {
     width: 78px;
