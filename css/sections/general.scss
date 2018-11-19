@@ -1,5 +1,5 @@
 //фоны
-.wrapper_about {
+/*.wrapper_about {
     background-image: url(../img/bg/art.svg), url(../img/bg/art_circle.svg), url(../img/bg/art_circle_smaller.svg), url(../img/bg/art_circle_smaller.svg),
     url(../img/bg/art_small.svg), 
     url(../img/bg/art_circle_small.svg), 
@@ -15,11 +15,93 @@
         right 50px top 985px, 
         right top;
     background-repeat: no-repeat;
-} 
+} */
+//index
 .wrapper_index {
     opacity: 99%;
     background: url(../img/bg/index.svg) right top no-repeat;
 }
+//about
+.wrapper_about {
+    background-image: url(../img/bgs/about/1_about_left.svg), url(../img/bgs/about/1_about_right.svg);
+    background-position: 
+        bottom 45px left, 
+        top right;
+    background-repeat: no-repeat;
+}  
+.wrapper_team {
+    background-image: url(../img/bgs/about/2_about_right.svg), url(../img/bgs/about/2_about_left.svg);
+    background-position: 
+        top right,
+        bottom 45px left;
+    background-repeat: no-repeat;
+}
+
+.wrapper_about_open {
+    background-image: url(../img/bgs/about/3_about_left.svg), url(../img/bgs/about/3_about_right.svg);
+    background-position: 
+        bottom 27px left, 
+        bottom 510px right;
+    background-repeat: no-repeat;
+}
+.wrapper_about_media {
+    background-image: url(../img/bgs/about/4_about_left.svg), url(../img/bgs/about/4_about_right.svg);
+    background-position: 
+        top 745px left, 
+        top right;
+    background-repeat: no-repeat;
+}
+.wrapper_about_contacts {
+    background-image: url(../img/bgs/about/5_about_left.svg), url(../img/bgs/about/5_about_right.svg);
+    background-position: 
+        top left, 
+        top 170px right;
+    background-repeat: no-repeat;
+}
+//kids
+.wrapper_kids {
+    background-image: url(../img/bgs/kids/1_left.svg), url(../img/bgs/kids/1_right.svg);
+    background-position: 
+        bottom 500px left, 
+        top 318px right;
+    background-repeat: no-repeat;
+}
+.wrapper_kids_personal {
+    background-image: url(../img/bgs/kids/2_left.svg), url(../img/bgs/kids/2_right.svg);
+    background-position: 
+        top 240px left, 
+        top 310px right;
+    background-repeat: no-repeat;
+}
+//shop
+.wrapper_shop {
+    background-image: url(../img/bgs/shop/1_left.svg), url(../img/bgs/shop/1_right.svg);
+    background-position: 
+        top 335px left, 
+        top 130px right;
+    background-repeat: no-repeat;
+}  
+.wrapper_shop_basket {
+    background-image: url(../img/bgs/shop/2_left.svg), url(../img/bgs/shop/1_right.svg);
+    background-position: 
+        top 308px left, 
+        top 130px right;
+    background-repeat: no-repeat;
+} 
+.wrapper_shop_form {
+    background-image: url(../img/bgs/shop/3_left.svg), url(../img/bgs/shop/3_right.svg);
+    background-position: 
+        top 330px left, 
+        top 195px right;
+    background-repeat: no-repeat;
+} 
+.wrapper_shop_pay {
+    background-image: url(../img/bgs/shop/4_left.svg), url(../img/bgs/shop/4_right.svg);
+    background-position: 
+        top left, 
+        top 115px right;
+    background-repeat: no-repeat;
+} 
 //social
 .social {
     width: 78px;

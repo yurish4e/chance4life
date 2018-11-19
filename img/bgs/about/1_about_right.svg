@@ -1,0 +1,10 @@
+<svg width="1160" height="1245" viewBox="0 0 1160 1245" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:multiply">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46.3075 369.474C20.1782 414.731 33.302 472.476 76.4257 501.994L1161.91 1245V0H259.623L46.3075 369.474Z" fill="#F7F7F7"/>
+</g>
+<circle cx="1010" cy="494" r="80" fill="#ADE5FF"/>
+<path d="M955.396 570.111L1356 339.999" stroke="#5ABDEB" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1026.51 553.818L1120.77 499.508" stroke="#336B85" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle r="8" transform="matrix(1 0 0 -1 1048 1038)" fill="#ADE5FF"/>
+<circle cx="1006" cy="986" r="36" fill="#ADE5FF"/>
+</svg>
