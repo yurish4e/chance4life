@@ -52,7 +52,7 @@
     height: 40px;
     width: 120px;
     text-decoration: none;
-    line-height: 35px;
+    line-height: 30px;
     font-size: 12px;
     font-family: 'GothamPro-Bold';
     transition: 200ms;
@@ -217,6 +217,10 @@
     width: 700px;
     margin: 0 auto;
     padding-bottom: 80px;
+}
+.about_news_title {
+    color: $Blue;
+    font-size: 20px;
 }
 //СМИ о нас
 .about_media {

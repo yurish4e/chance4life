@@ -47,10 +47,11 @@
 		}
 	});
      });
-       if ($(window).width() < 1280) {
+       if ($(window).width() < 1024) {
          $(".news").toggleClass("container");
          $(".news_main_title").toggleClass("container");
          $(".news_wrapper").toggleClass("owl-carousel");
+         $(".navigation").toggleClass("owl-carousel_inf");
      }
      
      $('.owl-carousel').slick({
@@ -61,6 +62,16 @@
       centerMode: false,
       variableWidth: true,
          arrows: false
+      });
+     $('.owl-carousel_inf').slick({
+        dots: false,
+      infinite: true,
+      speed: 200,
+      slidesToShow: 1,
+      centerMode: false,
+      variableWidth: true,
+         arrows: false,
+         infinite: false
       });
  });
 

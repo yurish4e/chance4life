@@ -19,6 +19,7 @@
     //шапка
     .header {
         padding: 15px 0 0 0;
+        margin-bottom: 45px;
         overflow: visible;
         width: 100%;
     }
@@ -29,7 +30,7 @@
     }
     .nav_lang {
         position: relative;
-        color: $Blue;
+        color: #fff;
         background-color: transparent;
     }
     .nav_lang_menu {
@@ -54,7 +55,7 @@
         display: inline-block;
         width: 20px;
         height: 20px;
-        background: url(../img/ico/lang.svg) center no-repeat;
+        background: url(../img/ico/lang_white.svg) center no-repeat;
         position: absolute;
         top: 5px;
     }
@@ -73,7 +74,6 @@
         left: 0;
         width: 150px;
         height: 40px;
-        outline: 1px solid red;
         /*opacity: 0;*/
         z-index: 50;
         display: none;
@@ -94,7 +94,7 @@
         display: inline-block;
         width: 40px;
         height: 40px;
-        background: url(../img/ico/menu_dark.svg) center no-repeat;
+        background: url(../img/ico/menu.svg) center no-repeat;
     }
     //навигация
     .nav_menu {
@@ -157,7 +157,6 @@
         border-radius: 30px 30px 0 0;
         background-image: none;
         background-color: #5ABDEB;
-        
         z-index: 10;
         .container {
             width: 300px;
@@ -246,7 +245,6 @@
         position: relative;
         height: 430px;
         margin-top: 330px;
-        outline: 1px solid red;
         .container {
             @include flexbox();
             @include flex-direction(column);
@@ -291,4 +289,156 @@
             display: none;
         }
     }
+    //about 
+    .navigation {
+        padding-left: 20px;
+        margin-bottom: 60px;
+        .slick-list {
+            overflow: visible;
+        }
+    }
+    .navigation_item {
+        margin-right: 30px;
+    }
+    .navigation_item::after {
+        width: 15px;
+        right: -24px;
+    }
+    .navigation_link {
+        line-height: 40px;
+    }
+    .video {
+        width: 100%;
+        height: 158px;
+        margin-bottom: 0;
+    }
+    .about_text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .docs {
+        height: 365px;
+        width: 240px;
+        margin: 0 auto 80px;
+        @include flexbox();
+            @include flex-direction(column);
+            @include justify-content(space-between);
+    }
+    //team 
+    .team {
+        width: 100%;
+        @include flexbox();
+            @include flex-direction(column);
+            @include justify-content(space-between);
+    }
+    .team_wrap {
+        width: 280px;
+        height: 280px;
+        img {
+            height: 100%;
+        }
+    }
+    .team_right {
+        width: 100%;
+        height: 208px;
+        img {
+            width: 100%;
+        }
+    }
+    //news
+    .about_news_item {
+        width: 100%;
+        margin: 0;
+    }
+    .about_news_wrapper {
+        width: 100%;
+        height: 180px;
+    }
+    .about_news_pagination {
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(flex-start);
+    }
+    .pagination_page {
+        font-size: 10px;
+    }
+    .pagination_navigation {
+        width: 100%;
+        height: 30px;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+    }
+    .pagination_button {
+        padding: 0 5px;
+        margin: 0;
+        font-size: 10px;
+    }
+    //media
+    .about_media {
+        width: 100%;    
+        @include flexbox();
+        @include flex-direction(column);
+    }
+    .about_media_item {
+        width: 100%;
+        @include flexbox();
+        @include flex-direction(column);
+    }
+    .about_media_wrapper {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about_media_text {
+        width: 100%;
+    }
+    //thanks
+    .thanks_text {
+            margin-bottom: 0;
+        
+    }
+    .thanks_item {
+        margin: 0 0 40px 0;
+        height: 180px;
+        img {
+            width: 100%;
+        }
+    }
+    .thanks_item:nth-child(odd) {
+        margin: 0 0 40px 0;
+    }
+    .thanks_item:last-child {
+        margin-bottom: 0;
+    }
+    //news_open
+    .about_news_open {
+        width: 100%;
+    }
+    //contacts
+    .contacts {
+        @include flexbox();
+        @include flex-direction(column);
+    }
+    .contacts_map {
+        width: 100%;
+        height: 380px;
+    }
+    .contacts_info {
+        width: 100%;
+    }
+    .contacts_pay {
+        margin: 0;
+    }
+    .contacts_form {
+    width: 100%;
+        padding: 0;
+        input, select, textarea {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+        input[type=submit] {
+        margin: 0;
+    }
+    }
+    
 }
