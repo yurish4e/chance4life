@@ -3223,7 +3223,8 @@ p:nth-child(2) {
   .container {
     width: 320px;
     padding: 0 20px;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0 auto; }
   .header {
     padding: 15px 0 0 0;
     overflow: visible;
@@ -3231,11 +3232,43 @@ p:nth-child(2) {
   .nav_logo {
     height: 45px;
     background-size: 80%;
-    margin-left: 5px; }
+    margin-left: 20px; }
   .nav_lang {
     position: relative;
     color: #366880;
     background-color: transparent; }
+  .nav_lang_menu {
+    position: absolute;
+    background-color: #5ABDEB;
+    padding-left: 8px;
+    border-radius: 0 0 7px 7px;
+    height: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    overflow: hidden; }
+    .nav_lang_menu span {
+      height: 30px; }
   .nav_lang::after {
     content: '';
     display: inline-block;
@@ -3246,10 +3279,32 @@ p:nth-child(2) {
     top: 5px; }
   .nav_lang:hover {
     background-color: transparent; }
+  .nav_lang_menu_visible {
+    width: 50px;
+    height: 60px;
+    -webkit-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms; }
+  .nav_close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 40px;
+    outline: 1px solid red;
+    /*opacity: 0;*/
+    z-index: 50;
+    display: none; }
+  .nav_close_lang {
+    display: inline-block; }
+  .nav_close_menu {
+    display: inline-block;
+    width: 50px;
+    left: 150px; }
   .menu_open {
     position: absolute;
     top: 2px;
-    right: 15px;
+    right: 23px;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -3338,4 +3393,142 @@ p:nth-child(2) {
     margin-top: -180px; }
   .developed {
     width: 230px;
-    background-position: 120px 30px; } }
+    background-position: 120px 30px; }
+  .title_description {
+    margin-top: -10px; }
+  .urgent {
+    height: 700px; }
+  .urgent_content {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-align-items: space-between;
+    -moz-align-items: space-between;
+    -ms-align-items: space-between;
+    -webkit-box-align: space-between;
+    -ms-flex-align: space-between;
+    align-items: space-between;
+    background-color: transparent; }
+  .urgent_photo {
+    width: 220px;
+    height: 220px;
+    left: 30px;
+    border-radius: 50%;
+    background-color: #E3E3E3;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    overflow: hidden; }
+  .urgent_button, .urgent_progress {
+    display: none; }
+  .urgent_photo {
+    position: absolute; }
+    .urgent_photo span {
+      display: none; }
+  .urgent_text {
+    width: 100%;
+    text-align: center; }
+  .urgent_info {
+    margin-top: 170px; }
+  .urgent_details {
+    width: 100%;
+    padding: 0; }
+  .news .slick-list {
+    overflow: visible; }
+  .news_wrapper {
+    margin-left: 50px; }
+  .news_item {
+    margin-right: 20px; }
+  .subscribe {
+    position: relative;
+    height: 430px;
+    margin-top: 330px;
+    outline: 1px solid red; }
+    .subscribe .container {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      -webkit-align-items: space-between;
+      -moz-align-items: space-between;
+      -ms-align-items: space-between;
+      -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+      align-items: space-between;
+      overflow: visible; }
+    .subscribe .subscribe_input {
+      height: 50px; }
+    .subscribe .subscribe_form {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      -ms-flex-pack: space-between;
+      height: 175px;
+      width: 100%; }
+    .subscribe .subscribe_button {
+      width: 100%; }
+  .subscribe_item {
+    width: 100%;
+    height: 370px;
+    margin-top: 40px; }
+    .subscribe_item span {
+      margin-bottom: -20px; }
+    .subscribe_item p {
+      width: 100%; }
+  .subscribe_item_1 {
+    position: relative;
+    z-index: 5;
+    margin-top: -320px;
+    left: 0;
+    height: 250px;
+    width: 100%;
+    padding: 0 10px;
+    border: 0; }
+    .subscribe_item_1 .subscribe_button {
+      display: none; } }

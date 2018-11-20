@@ -14,6 +14,7 @@
     width: 320px;
     padding: 0 20px;
     overflow: hidden;
+    margin: 0 auto;
 }
     //шапка
     .header {
@@ -24,12 +25,27 @@
     .nav_logo {
         height: 45px;
         background-size: 80%;
-        margin-left: 5px;
+        margin-left: 20px;
     }
     .nav_lang {
         position: relative;
         color: $Blue;
         background-color: transparent;
+    }
+    .nav_lang_menu {
+        position: absolute;
+        background-color: $lBlue;
+        padding-left: 8px;
+        border-radius: 0 0 7px 7px;
+        height: 0;
+        @include flexbox();
+            @include flex-direction(column);
+            @include align-items(flex-start);
+            @include justify-content(space-between);
+            overflow: hidden;
+        span {
+            height: 30px;
+        }
     }
     .nav_lang::after {
         content: '';
@@ -43,10 +59,36 @@
     .nav_lang:hover {
         background-color: transparent;
     }
+    .nav_lang_menu_visible {
+            width: 50px;
+            height: 60px;
+        transition: 200ms;
+    }
+    //доп кнопка для закрытия менюшек
+    .nav_close {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 40px;
+        outline: 1px solid red;
+        /*opacity: 0;*/
+        z-index: 50;
+        display: none;
+    }
+    .nav_close_lang {
+        display: inline-block;
+    }
+    .nav_close_menu {
+        display: inline-block;
+        width: 50px;
+        left: 150px;
+    }
+    //доп кнопка для закрытия менюшек 
     .menu_open {
         position: absolute;
         top: 2px;
-        right: 15px;
+        right: 23px;
         display: inline-block;
         width: 40px;
         height: 40px;
@@ -134,5 +176,117 @@
     .developed {
         width: 230px;
         background-position: 120px 30px;
+    }
+    
+    //index
+    .title_description {
+        margin-top: -10px;
+    }
+    .urgent {
+        height: 700px;
+    }
+    .urgent_content {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(space-between);
+        background-color: transparent;
+    }
+    .urgent_photo {
+        width: 220px;
+        height: 220px;
+        left: 30px;
+        border-radius: 50%;
+        background-color: #E3E3E3;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        overflow: hidden;
+    }
+    .urgent_button, .urgent_progress {
+        display: none;
+    }
+    .urgent_photo {
+        position: absolute;
+        span {
+            display: none;
+        }
+    }
+    .urgent_text {
+        width: 100%;
+        text-align: center;
+    }
+    .urgent_info {
+        margin-top: 170px;
+        
+    }
+    .urgent_details {
+        width: 100%;
+        padding: 0;
+    }
+    //news
+    .news {
+        .slick-list {
+            overflow: visible;
+        }
+    }
+    .news_wrapper {
+        margin-left: 50px;
+    }
+    .news_item {
+        margin-right: 20px;
+    }
+    //subscribe 
+    .subscribe {
+        position: relative;
+        height: 430px;
+        margin-top: 330px;
+        outline: 1px solid red;
+        .container {
+            @include flexbox();
+            @include flex-direction(column);
+            @include align-items(space-between);
+            overflow: visible;
+        }
+        .subscribe_input {
+            height: 50px;
+        }
+        .subscribe_form {
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content(space-between);
+            height: 175px;
+            width: 100%;
+        }
+        .subscribe_button {
+            width: 100%;
+        }
+    }
+    .subscribe_item {
+        width: 100%;
+        height: 370px;
+        margin-top: 40px;
+        span {
+            margin-bottom: -20px;
+        }
+        p {
+            width: 100%;
+        }
+    }
+    .subscribe_item_1 {
+        position: relative;
+        z-index: 5;
+        margin-top: -320px;
+        left: 0;
+        height: 250px;
+        width: 100%;
+        padding: 0 10px;
+        border: 0;
+        .subscribe_button {
+            display: none;
+        }
     }
 }
