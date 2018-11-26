@@ -112,7 +112,43 @@ p:nth-child(2) {
 .chance_help:hover {
     margin-top: 10px; 
 }
-
+//popup
+.popup_index {
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    top: -500px;
+    right: 420px;
+    transition: 200ms;
+    background-color: #fff;
+    border-radius: 30px;
+    opacity: 0;
+    z-index: -5;
+}
+.popup_index_close {
+    position: absolute;
+    top: -55px;
+    right: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: $lBlue;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(../img/ico/close_white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 200ms;
+}
+.popup_index_close:hover {
+    background-color: darken($lBlue, 10%);
+}
+.popup_index_show {
+    display: inline-block;
+    opacity: 1;
+    z-index: 5;
+    top: 0;
+}
 //Срочный сбор средств
 .urgent_content {
     @include flexbox();

@@ -1,0 +1,56 @@
+.help_navigation {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    background-color: $lBlue;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 10px;
+    font-family: 'GothamPro-Bold';
+}
+.help_text {
+    margin-top: 60px;
+    @include flexbox();
+    @include justify-content(space-between);
+    margin-bottom: 80px;
+    p {
+        color: #808080;
+        font-size: 12px;
+        line-height: 21px;
+    }
+}
+.payment {
+    h4 {
+        font-size: 18px;
+        color: $Blue;
+        margin-top: 0;
+    }
+}
+.pay_info {
+    font-size: 14px;
+        line-height: 20px;
+        color: #9DAFBD;
+}
+.thanks {
+    position: relative;
+    width: 303px;
+    height: 620px;
+    margin: 0 auto 20px;
+    background: url(../img/help/thanks.svg) center no-repeat;
+}
+.thanks_link {
+    position: absolute;
+    display: inline-block;
+    width: 120px;
+    height: 160px;
+    top: 0;
+    right: 0;
+}
+.thanks_logo {
+    width: 890px;
+    height: 630px;
+    margin: 0 auto;
+    background: url(../img/help/thanks_2.png) center no-repeat;
+}

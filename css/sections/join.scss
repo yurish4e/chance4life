@@ -5,9 +5,9 @@
     @include flexbox();
     @include justify-content(space-between);
     overflow: hidden;
-    .navigation_item {
-    width: 180px;
-}
+        .navigation_item {
+            width: 180px;
+        }
 .navigation_item::after {
     width: 405px;
     left: 185px;
@@ -43,12 +43,16 @@
     }
 //форма обратной связи
 .join_contacts {
-    @include flexbox();
-    @include justify-content(center);
-    background-color: #fff;
     width: 700px;
     margin: 0 auto 100px;
     -webkit-box-shadow: 0px 40px 80px 0px rgba(0,0,0,0.1);
--moz-box-shadow: 0px 40px 80px 0px rgba(0,0,0,0.1);
-box-shadow: 0px 40px 80px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 40px 80px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 40px 80px 0px rgba(0,0,0,0.1);
+    .contacts_form {
+        box-shadow: none;
+        width: 700px;
+    }
+    input {
+        width: 310px;
+    }
 }

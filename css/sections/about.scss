@@ -1,5 +1,3 @@
-
-
 .navigation {
     width: 940px;
     margin: 0 auto 80px;
@@ -9,6 +7,7 @@
     @include justify-content(space-between);
     overflow: hidden;
 }
+
 .navigation_item {
     list-style: none;
     display: inline-block;
@@ -20,6 +19,7 @@
     position: relative;
     transition: 200ms;
 }
+
 //активный пункт меню
 .navigation_item_active {
     background-color: $lBlue;
@@ -27,6 +27,7 @@
         color: #fff;
     }
 }
+
 //меню при наведении
 .navigation_item:hover {
     background-color: $lBlue;
@@ -34,6 +35,7 @@
         color: #fff;
     }
 }
+
 //полоска возле пунктов меню
 .navigation_item::after {
     content: '';
@@ -45,18 +47,20 @@
     right: -33px;
     top: 50%;
 }
+
 //ссылка
 .navigation_link {
     color: $lBlue;
     display: inline-block;
     height: 40px;
-    width: 120px;
+    width: 118px;
     text-decoration: none;
-    line-height: 30px;
+    line-height: 35px;
     font-size: 12px;
     font-family: 'GothamPro-Bold';
     transition: 200ms;
 }
+
 // видео
 .video {
     width: 720px;
@@ -66,6 +70,7 @@
     overflow: hidden;
     margin-bottom: 50px;
 }
+
 .about_text {
     margin: 0 auto;
     width: 940px;
@@ -76,6 +81,7 @@
         font-size: 20px;
     }
 }
+
 //документы
 .docs {
     margin: 0 auto;
@@ -85,15 +91,15 @@
     @include justify-content(space-between);
     margin-bottom: 70px;
 }
+
 .docs_item {
     background-color: #fff;
     border-radius: 10px;
     width: 240px;
     height: 94px;
-    
-    -webkit-box-shadow: 0px 15px 40px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 15px 40px 0px rgba(0,0,0,0.15);
-    box-shadow: 0px 15px 40px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.15);
     span {
         width: 240px;
         height: 47px;
@@ -111,6 +117,7 @@
         width: 240px;
     }
 }
+
 //наша команда
 .team {
     @include flexbox();
@@ -118,7 +125,8 @@
     @include justify-content(space-between);
     text-align: center;
     margin-bottom: 90px;
-} 
+}
+
 .team_left {
     h3 {
         font-size: 24px;
@@ -129,25 +137,31 @@
         color: #333333;
     }
 }
+
 .team_wrap {
     width: 410px;
     height: 410px;
     background-color: #F7F7F7;
     border-radius: 30px;
-    
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 }
+
 .team_right {
     height: 510px;
     border-radius: 30px;
     overflow: hidden;
 }
+
 //новости
-.about_news{
+.about_news {
     @include flexbox();
     /*@include justify-content(space-between);
     @include align-items(flex-start);*/
     @include flex-wrap(wrap);
 }
+
 .about_news_item {
     width: 240px;
     height: 265px;
@@ -160,9 +174,11 @@
         font-family: 'GothamPro-Medium';
     }
 }
+
 .about_news_item:nth-child(4n+4) {
     margin: 0;
 }
+
 .about_news_wrapper {
     border-radius: 30px 30px 0 0;
     overflow: hidden;
@@ -172,6 +188,7 @@
         width: 100%;
     }
 }
+
 .about_news_pagination {
     @include flexbox();
     @include flex-direction(row);
@@ -189,17 +206,20 @@
         font-family: 'GothamPro-Bold';
     }
 }
+
 .page_numbers {
-        text-decoration: none;
-        color: $lBlue;
-        font-size: 18px;
-        font-family: 'GothamPro-Medium';
-    }
+    text-decoration: none;
+    color: $lBlue;
+    font-size: 18px;
+    font-family: 'GothamPro-Medium';
+}
+
 .pagination_page p {
     color: $lBlue;
     font-size: 18px;
     font-family: 'GothamPro-Medium';
 }
+
 .pagination_button {
     border: 1px solid $lBlue;
     padding: 12px;
@@ -208,35 +228,41 @@
     font-size: 12px;
     text-transform: uppercase;
 }
+
 .pagination_prev {
     color: #C4C4C4!important;
     border: 1px solid #C4C4C4;
 }
+
 //открытая новость
 .about_news_open {
     width: 700px;
     margin: 0 auto;
     padding-bottom: 80px;
 }
+
 .about_news_title {
     color: $Blue;
     font-size: 20px;
 }
+
 //СМИ о нас
 .about_media {
     width: 940px;
     margin: 0 auto;
-    
 }
+
 .about_media_item {
     @include flexbox();
     @include align-items(center);
     @include justify-content(space-between);
     margin-bottom: 50px;
 }
+
 .about_media_item:last-child {
     margin: 0;
 }
+
 .about_media_wrapper {
     @include flexbox();
     @include align-items(center);
@@ -250,6 +276,7 @@
         height: 100%;
     }
 }
+
 .about_media_text {
     width: 680px;
     a {
@@ -259,26 +286,24 @@
         color: $Blue;
     }
 }
+
 //благодарности
 .thanks_text {
-    -webkit-column-width: 200px;
-    -moz-column-width: 200px;
-    column-width: 200px;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 80px;
-    -moz-column-gap: 80px;
-    column-gap: 80px;
+    @include flexbox();
+    @include align-items(flex-start);
+    @include justify-content(space-between);
     margin-bottom: 80px;
     p {
+        width: 550px;
         margin: 0;
     }
 }
+
 .thanks_list {
     @include flexbox();
     @include flex-wrap(wrap);
 }
+
 .thanks_item {
     width: 565px;
     height: 350px;
@@ -289,28 +314,37 @@
     @include align-items(center);
     @include justify-content(center);
 }
+
 .thanks_item:nth-child(odd) {
     margin-right: 50px;
-    
 }
+
 //contacts
 .contacts {
     @include flexbox();
     @include justify-content(space-between);
     margin-bottom: 100px;
 }
+
 .contacts_map {
+    position: relative;
     width: 550px;
     height: 640px;
+    overflow: hidden;
+    border-radius: 10px;
 }
+
 .contacts_info {
     width: 600px;
 }
+
 .contacts_pay {
-    margin-left: 60px;
+    margin-left: 30px;
+    margin-bottom: 35px;
     h3 {
         color: $Blue;
         font-size: 16px;
+        margin-top: -7px;
     }
     p {
         color: #9DAFBD;
@@ -318,10 +352,17 @@
         line-height: 17px;
     }
 }
+
 .contacts_form {
-    padding: 30px;
+    padding: 30px 30px 0;
     width: 600px;
-    input, select {
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.102);
+    -moz-box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.102);
+    box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.102);
+    input,
+    select {
         width: 260px;
         height: 50px;
         border: 1px solid $lBlue;
@@ -332,37 +373,43 @@
         margin-bottom: 20px;
         color: $Blue;
     }
-    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      color: $Blue;
+    input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $Blue;
     }
-    input::-moz-placeholder { /* Firefox 19+ */
-      color: $Blue;
+    input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $Blue;
     }
-    input:-ms-input-placeholder { /* IE 10+ */
-      color: $Blue;
+    input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: $Blue;
     }
-    input:-moz-placeholder { /* Firefox 18- */
-      color: $Blue;
+    input:-moz-placeholder {
+        /* Firefox 18- */
+        color: $Blue;
     }
-    
-    textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      color: $Blue;
+    textarea::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $Blue;
     }
-    textarea::-moz-placeholder { /* Firefox 19+ */
-      color: $Blue;
+    textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $Blue;
     }
-    textarea:-ms-input-placeholder { /* IE 10+ */
-      color: $Blue;
+    textarea:-ms-input-placeholder {
+        /* IE 10+ */
+        color: $Blue;
     }
-    textarea:-moz-placeholder { /* Firefox 18- */
-      color: $Blue;
+    textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: $Blue;
     }
     input:focus {
         height: 50px;
         background-color: #F7F7F7;
         color: $Blue;
     }
-    
     input:nth-child(odd) {
         margin-right: 15px;
     }
@@ -383,15 +430,17 @@
     //отправить
     input[type=submit] {
         margin-left: 25%;
-        margin-top: 30px;
+        margin-top: 15px;
+        margin-bottom: 28px;
+        padding: 0;
         background-color: $lBlue;
         color: #fff;
         cursor: pointer;
     }
-    input[type=submit]:hover{
-        -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
--moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    input[type=submit]:hover {
+        -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
     }
     //select
     .contacts_select {

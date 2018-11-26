@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
     <script type="text/javascript" src="../slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -25,20 +25,28 @@
                 <div class="nav_logo"></div>
                 <!-- menu -->
                 <div class="nav_menu">
-                    <ul class="menu">
-                        <li class="menu_item"><a href="../index.html">Главная</a></li>
-                        <li class="menu_item"><a href="about.html">О фонде</a></li>
-                        <li class="menu_item menu_item_current"><a href="#">Наши дети</a></li>
+                    <ul class="menu" id="menu">
+                        <li class="menu_item menu_item_current"><a href="index.html">Главная</a></li>
+                        <li class="menu_item"><a href="about/about.html">О фонде</a></li>
+                        <li class="menu_item"><a href="#">Наши дети</a></li>
                         <li class="menu_item"><a href="#">Присоединяйтесь</a></li>
                         <li class="menu_item"><a href="#">Магазин</a></li>
                     </ul>
                     <!-- lang switch -->
-                    <a href="#" class="nav_lang">RU</a>
+                    <div class="nav_lang">
+                        <span>RU</span>
+                        <div class="nav_lang_menu mobile" id="menu_visible">
+                            <span>EN</span>
+                            <span>HE</span>
+                        </div>
+                    </div>
+                    <span class="nav_close"></span>
+                    <span class="menu_open mobile"></span>
                 </div>
                 <!-- help -->
                 <a href="" class="nav_help">Помочь фонду</a>
                 <!-- social -->
-                <div class="social">
+                <div class="social pc">
                     <a href="#" class="social_fb"></a>
                     <a href="#" class="social_in"></a>
                 </div>
@@ -47,8 +55,8 @@
         <!-- /header -->
 
         <!-- main content -->
-        <div class="container">
-                <ul class="navigation_kids">
+
+        <ul class="navigation_kids" id="navigation_home">
                     <li class="navigation_item">
                         <a href="about.html" class="navigation_link">Все дети</a>
                     </li>
@@ -60,68 +68,96 @@
                         <a href="about_thanks.html" class="navigation_link">Помним</a>
                     </li>
                 </ul>
-                <div class="thanks_text">
-                        <p>В марте 2013 года, в возрасте 14 лет, Даша проходила лечение в клинике Ихилов, в которую попала после 2х лет неудачного лечения с 4-ой стадией рака. Девочке был поставлен страшный диагноз — саркома Юинга. Тот самый вид онкологии, которым особенно часто страдают подростки. Даша прилетела из Санкт-Петербурга в крайне тяжелом состояние, но израильские врачи не отказались от девочки и начали борьбу за жизнь и здоровье Даши.</p>
+
+        <div class="container">
+            <div class="thanks_text">
+                        <p>В марте 2013 года, в возрасте 14 лет, Даша проходила лечение в клинике Ихилов, в которую попала после 2х лет неудачного лечения с 4-ой стадией рака. Девочке был поставлен страшный диагноз — саркома Юинга. Тот самый вид онкологии, которым особенно часто страдают подростки.</p> <p>Даша прилетела из Санкт-Петербурга в крайне тяжелом состояние, но израильские врачи не отказались от девочки и начали борьбу за жизнь и здоровье Даши.</p>
                     </div>
-                <div class="kids_wrapper kids_home">
-                   
-                    <div class="kids_item">
-                       <div class="kids_img_wrapper">
-                           <img src="../img/test/1.png" alt="">
-                       </div>
-                        <div class="kids_content">
-                            <h2>Саша Малышко</h2>
-                            <span>Саркома Юинга (рецидив)</span>
-                            <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
-                            <a href="" class="kids_help">19 000$ / 25 000$</a>
-                        </div>
+            <div class="kids_wrapper kids_home">
+
+                <div class="kids_item">
+                    <div class="kids_img_wrapper">
+                        <img src="../img/test/1.png" alt="">
                     </div>
-                    <div class="kids_item">
-                       <div class="kids_img_wrapper">
-                           <img src="../img/test/1.png" alt="">
-                       </div>
-                        <div class="kids_content">
-                            <h2>Саша Малышко</h2>
-                            <span>Саркома Юинга (рецидив)</span>
-                            <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
-                            <a href="" class="kids_help">19 000$ / 25 000$</a>
-                        </div>
-                    </div>
-                    <div class="kids_item">
-                       <div class="kids_img_wrapper">
-                           <img src="../img/test/1.png" alt="">
-                       </div>
-                        <div class="kids_content">
-                            <h2>Саша Малышко</h2>
-                            <span>Саркома Юинга (рецидив)</span>
-                            <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
-                            <a href="" class="kids_help">19 000$ / 25 000$</a>
-                        </div>
-                    </div>
-                    <div class="kids_item">
-                       <div class="kids_img_wrapper">
-                           <img src="../img/test/1.png" alt="">
-                       </div>
-                        <div class="kids_content">
-                            <h2>Саша Малышко</h2>
-                            <span>Саркома Юинга (рецидив)</span>
-                            <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
-                            <a href="" class="kids_help">19 000$ / 25 000$</a>
-                        </div>
-                    </div>
-                    <div class="kids_item">
-                       <div class="kids_img_wrapper">
-                           <img src="../img/test/1.png" alt="">
-                       </div>
-                        <div class="kids_content">
-                            <h2>Саша Малышко</h2>
-                            <span>Саркома Юинга (рецидив)</span>
-                            <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
-                            <a href="" class="kids_help">19 000$ / 25 000$</a>
-                        </div>
+                    <div class="kids_content">
+                        <h2>Саша Малышко</h2>
+                        <span>Саркома Юинга (рецидив)</span>
+                        <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
                     </div>
                 </div>
-                <div class="about_news_pagination">
+                <div class="kids_item">
+                    <div class="kids_img_wrapper">
+                        <img src="../img/test/1.png" alt="">
+                    </div>
+                    <div class="kids_content">
+                        <h2>Саша Малышко</h2>
+                        <span>Саркома Юинга (рецидив)</span>
+                        <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
+                    </div>
+                </div>
+                <div class="kids_item">
+                    <div class="kids_img_wrapper">
+                        <img src="../img/test/1.png" alt="">
+                    </div>
+                    <div class="kids_content">
+                        <h2>Саша Малышко</h2>
+                        <span>Саркома Юинга (рецидив)</span>
+                        <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
+                    </div>
+                </div>
+                <div class="kids_item">
+                    <div class="kids_img_wrapper">
+                        <img src="../img/test/1.png" alt="">
+                    </div>
+                    <div class="kids_content">
+                        <h2>Саша Малышко</h2>
+                        <span>Саркома Юинга (рецидив)</span>
+                        <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
+                    </div>
+                </div>
+                <div class="kids_item">
+                    <div class="kids_img_wrapper">
+                        <img src="../img/test/1.png" alt="">
+                    </div>
+                    <div class="kids_content">
+                        <h2>Саша Малышко</h2>
+                        <span>Саркома Юинга (рецидив)</span>
+                        <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
+                    </div>
+                </div>
+                <div class="kids_item">
+                    <div class="kids_img_wrapper">
+                        <img src="../img/test/1.png" alt="">
+                    </div>
+                    <div class="kids_content">
+                        <h2>Саша Малышко</h2>
+                        <span>Саркома Юинга (рецидив)</span>
+                        <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
+                    </div>
+                </div>
+                <div class="kids_item">
+                    <div class="kids_img_wrapper">
+                        <img src="../img/test/1.png" alt="">
+                    </div>
+                    <div class="kids_content">
+                        <h2>Саша Малышко</h2>
+                        <span>Саркома Юинга (рецидив)</span>
+                        <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
+                    </div>
+                </div>
+                <div class="kids_item">
+                    <div class="kids_img_wrapper">
+                        <img src="../img/test/1.png" alt="">
+                    </div>
+                    <div class="kids_content">
+                        <h2>Саша Малышко</h2>
+                        <span>Саркома Юинга (рецидив)</span>
+                        <p>Даша Малышко, 1 год Саркома Юинга (рецидив), больница Ихилов Даша — молодая, красивая, и очень...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about_news_pagination">
                 <div class="pagination_page">
                     <p>Страница 1 из 237</p>
                 </div>
@@ -133,17 +169,16 @@
                     <a class="page_numbers" href="#">
                         <span class="">2,</span>
                     </a>
-                    <span class="page_numbers dots">…</span>  
+                    <span class="page_numbers dots">…</span>
                     <a class="page_numbers" href="#">
                         <span class="">7</span>
                     </a>
                     <a href="" class="pagination_button">Следующая</a>
                 </div>
             </div>
-                
         </div>
         <!-- /container -->
-        
+
         <!-- /main content -->
     </div>
 
@@ -156,7 +191,7 @@
                 <p>Фонд помощи онкобольным детям. Фонд - некомерческая организация.</p>
             </div>
             <!-- footer item -->
-            <div class="footer_item">
+            <div class="footer_item pc">
                 <ul class="footer_menu">
                     <li class="footer_menu_item"><a href="#">Главная</a></li>
                     <li class="footer_menu_item"><a href="#">О фонде</a></li>
@@ -171,8 +206,8 @@
             </div>
             <!-- footer item -->
             <div class="footer_item">
-                <h3 class="footer_title">Соцсети:</h3>
-                <p>За нами Вы также можете следить в наших социальных сетях:</p>
+                <h3 class="footer_title pc">Соцсети:</h3>
+                <p class="pc">За нами Вы также можете следить в наших социальных сетях:</p>
                 <div class="social">
                     <a href="#" class="social_fb"></a>
                     <a href="#" class="social_in"></a>
@@ -180,13 +215,13 @@
             </div>
             <!-- footer item -->
             <div class="footer_item">
-                <h3 class="footer_title">Рассылка:</h3>
-                <form action="" class="footer_sub">
+                <h3 class="footer_title pc">Рассылка:</h3>
+                <form action="" class="footer_sub pc">
                     <input type="text" name="textfield" class="footer_input">
                     <input type="button" name="button" class="footer_button" value="ПОДПИСАТЬСЯ">
                 </form>
                 <div class="developed">
-                    <p><span>Разработано </span><a href="#">BeOnline.Studio</a></p>
+                    <p><span>Разработано </span><br class="mobile"><a href="#">BeOnline.Studio</a></p>
                 </div>
             </div>
 

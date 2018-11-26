@@ -25,20 +25,28 @@
                 <div class="nav_logo"></div>
                 <!-- menu -->
                 <div class="nav_menu">
-                    <ul class="menu">
-                        <li class="menu_item"><a href="../index.html">Главная</a></li>
-                        <li class="menu_item"><a href="about.html">О фонде</a></li>
-                        <li class="menu_item menu_item_current"><a href="#">Наши дети</a></li>
+                    <ul class="menu" id="menu">
+                        <li class="menu_item menu_item_current"><a href="index.html">Главная</a></li>
+                        <li class="menu_item"><a href="about/about.html">О фонде</a></li>
+                        <li class="menu_item"><a href="#">Наши дети</a></li>
                         <li class="menu_item"><a href="#">Присоединяйтесь</a></li>
                         <li class="menu_item"><a href="#">Магазин</a></li>
                     </ul>
                     <!-- lang switch -->
-                    <a href="#" class="nav_lang">RU</a>
+                    <div class="nav_lang">
+                        <span>RU</span>
+                        <div class="nav_lang_menu mobile" id="menu_visible">
+                            <span>EN</span>
+                            <span>HE</span>
+                        </div>
+                    </div>
+                    <span class="nav_close"></span>
+                    <span class="menu_open mobile"></span>
                 </div>
                 <!-- help -->
                 <a href="" class="nav_help">Помочь фонду</a>
                 <!-- social -->
-                <div class="social">
+                <div class="social pc">
                     <a href="#" class="social_fb"></a>
                     <a href="#" class="social_in"></a>
                 </div>
@@ -47,18 +55,41 @@
         <!-- /header -->
 
         <!-- main content -->
+
         <div class="container">
-                <div class="personal_wrapper">
+            <div class="personal_wrapper">
                     <div class="personal_left">
                         <div class="personal_wrapper_img">
                         <img src="../img/test/1.png" alt="">
                     </div>
-                    <span class="personal_info">Инфо</span>
+                    <span class="personal_info personal_info_pc pc">Инфо</span>
                     </div>
                     
                     <div class="personal_content">
-                        <h2>Даша Малышко, 19 лет Саркома Юинга (рецидив), больница Ихилов</h2>
-                        <a href="#" class="subscribe_button">Пожертвовать</a>
+                        <h2>Даша Малышко, <br class="mobile"> 19 лет <br class="mobile"> Саркома Юинга (рецидив), больница Ихилов</h2>
+                        <span class="personal_info personal_info_mobile mobile">Инфо</span>
+                            <div class="personal_full personal_full_mobile">
+                                <p>Даша — молодая, красивая, и очень жизнерадостная девушка. И она знает, что такое рак не понаслышке.
+            В марте 2013 года, в возрасте 14 лет, Даша проходила лечение в клинике Ихилов, в которую попала после 2х лет неудачного лечения с 4-ой стадией рака. Девочке был поставлен страшный диагноз — саркома Юинга. Тот самый вид онкологии, которым особенно часто страдают подростки. Даша прилетела из Санкт-Петербурга в крайне тяжелом состояние, но израильские врачи не отказались от девочки и начали борьбу за жизнь и здоровье Даши.
+            Успешное лечение продлилось 11 месяцев: 6 химиотерапий, операция по удалению лопатки и остатков опухоли, 2 химиотерапии, пересадка костного мозга, 25 сеансов облучения (радиотерапии).
+            Даша победила рак, вернулась в родной Санкт- Петербург и влилась в обычную жизнь подростка. Девочка регулярна приезжала в Израиль на проверки, семья и врачи, все были очень рады такому чудесному выздоровлению и ремиссии. В июле 2018 г. Даша должна была приехать на заключительную проверку. После чего диагноз «онкология» был бы снят.
+            Но в марте 2018 г. Дашу стали сильно беспокоить боли в шеи. Проверка МРТ показала, что рак вернулся. Даша с мамой срочно вылетели в Израиль, где ее уже ждала команда врачей клиники Ихилов. Так, с 23 апреля по настоящее время Даша находится вновь в Израиле. Больница Ихилов в Тель-Авиве снова дал Даше шанс на полное выздоровление!
+            Впереди новая химия, операция, тяжелая борьба со страшной болезнью. Но Даша очень сильная и храбрая девушка, и обязательно все преодолеет.
+            Дома ее ждут друзья, учеба, подопечные в питерском хосписе, которым она с мамой активно помогала во время своей ремиссии.
+            Дашу ждет долгая и счастливая жизнь. Но сейчас ей нужна наша поддержка и участие. И деньги.
+            Счёт, выставленный клиникой только на первый этап лечения составляет 60 000$. Этой суммы у Дашиной семьи нет. И это именно тот случай, когда вопрос жизни и здоровья молодой девушки можно оценить. И цена — огромная. Но вместе мы сможем, ведь уже много раз могли!</p>
+                           <p>Спасибо за вашу помощь!</p>
+                           <p>
+                               система BIT: ‭052-5253631‬<br>
+info@chance4life.org<br>
+Банковский перевод:<br>
+Mizrahi tefahot bank LTD. 469 Florentin branch 54 Salame road, Tel-Aviv, Israel SWIFT: MIZBILIT ACCOUNT: 267634 ACCOUNT NAME: Chance for life IBAN: IL27 0204 6900 0000 0267 634
+Для адресного перевода укажите пожалуйста имя и фамилию ребенка.
+                           </p>
+
+
+                            </div>
+                        <span class="subscribe_button pc" id="personal_help">Пожертвовать</span>
                         <div class="personal_donate">
                             <p>Donation Goal For This Project is $10 000</p>
                             <div class="donate_info">
@@ -67,11 +98,12 @@
                                 </div>
                                 <span>62%</span>
                             </div>
-                            <span>62% Donated/$3800 To Go</span>
+                            <span class="donate_percent">62% Donated/$3800 To Go</span>
                         </div>
+                        <a href="#popup_personal" class="subscribe_button mobile" id="personal_help_mob">Пожертвовать</a>
                     </div>
                 </div>
-                <div class="personal_full">
+                <div class="personal_full personal_full_pc pc">
                     <p>Даша — молодая, красивая, и очень жизнерадостная девушка. И она знает, что такое рак не понаслышке.
 В марте 2013 года, в возрасте 14 лет, Даша проходила лечение в клинике Ихилов, в которую попала после 2х лет неудачного лечения с 4-ой стадией рака. Девочке был поставлен страшный диагноз — саркома Юинга. Тот самый вид онкологии, которым особенно часто страдают подростки. Даша прилетела из Санкт-Петербурга в крайне тяжелом состояние, но израильские врачи не отказались от девочки и начали борьбу за жизнь и здоровье Даши.
 Успешное лечение продлилось 11 месяцев: 6 химиотерапий, операция по удалению лопатки и остатков опухоли, 2 химиотерапии, пересадка костного мозга, 25 сеансов облучения (радиотерапии).
@@ -83,13 +115,21 @@
 Счёт, выставленный клиникой только на первый этап лечения составляет 60 000$. Этой суммы у Дашиной семьи нет. И это именно тот случай, когда вопрос жизни и здоровья молодой девушки можно оценить. И цена — огромная. Но вместе мы сможем, ведь уже много раз могли!</p>
                <p>Спасибо за вашу помощь!</p>
                 </div>
-                
+           
         </div>
         <!-- /container -->
-        
+
         <!-- /main content -->
     </div>
-
+    <!--popup-->
+    <div class="popup_personal" id="popup_personal">
+       
+        
+        <div class="popup_personal_content">
+           <div class="popup_personal_close" id="popup_personal_close"></div>
+       </div>
+    </div>
+    
     <!-- /footer -->
     <footer class="footer">
         <div class="container">
@@ -99,7 +139,7 @@
                 <p>Фонд помощи онкобольным детям. Фонд - некомерческая организация.</p>
             </div>
             <!-- footer item -->
-            <div class="footer_item">
+            <div class="footer_item pc">
                 <ul class="footer_menu">
                     <li class="footer_menu_item"><a href="#">Главная</a></li>
                     <li class="footer_menu_item"><a href="#">О фонде</a></li>
@@ -114,8 +154,8 @@
             </div>
             <!-- footer item -->
             <div class="footer_item">
-                <h3 class="footer_title">Соцсети:</h3>
-                <p>За нами Вы также можете следить в наших социальных сетях:</p>
+                <h3 class="footer_title pc">Соцсети:</h3>
+                <p class="pc">За нами Вы также можете следить в наших социальных сетях:</p>
                 <div class="social">
                     <a href="#" class="social_fb"></a>
                     <a href="#" class="social_in"></a>
@@ -123,13 +163,13 @@
             </div>
             <!-- footer item -->
             <div class="footer_item">
-                <h3 class="footer_title">Рассылка:</h3>
-                <form action="" class="footer_sub">
+                <h3 class="footer_title pc">Рассылка:</h3>
+                <form action="" class="footer_sub pc">
                     <input type="text" name="textfield" class="footer_input">
                     <input type="button" name="button" class="footer_button" value="ПОДПИСАТЬСЯ">
                 </form>
                 <div class="developed">
-                    <p><span>Разработано </span><a href="#">BeOnline.Studio</a></p>
+                    <p><span>Разработано </span><br class="mobile"><a href="#">BeOnline.Studio</a></p>
                 </div>
             </div>
 

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="wrapper wrapper_about_contacts">
+    <div class="wrapper wrapper_about_contacts wrapper_about_mob_3">
 
         <!-- header -->
         <header class="header container">
@@ -56,56 +56,54 @@
 
         <!-- main content -->
 
-        <ul class="navigation">
-                    <li class="navigation_item">
-                        <a href="about.html" class="navigation_link">История</a>
-                    </li>
-                    <li class="navigation_item">
-                        <a href="about_team.html" class="navigation_link">Команда</a>
-                    </li>
-                    <li class="navigation_item">
-                        <a href="about_news.html" class="navigation_link">Наши новости</a>
-                    </li>
-                    <li class="navigation_item">
-                        <a href="about_media.html" class="navigation_link">СМИ о нас</a>
-                    </li>
-                    <li class="navigation_item">
-                        <a href="about_thanks.html" class="navigation_link">Благодарности</a>
-                    </li>
-                    <li class="navigation_item navigation_item_active">
-                        <a href="about_contacts.html" class="navigation_link">Контакты</a>
-                    </li>
-                </ul>
+        <ul class="navigation" id="navigation_contacts">
+            <li class="navigation_item">
+                <a href="about.html" class="navigation_link">История</a>
+            </li>
+            <li class="navigation_item">
+                <a href="about_team.html" class="navigation_link">Команда</a>
+            </li>
+            <li class="navigation_item">
+                <a href="about_news.html" class="navigation_link">Наши новости</a>
+            </li>
+            <li class="navigation_item">
+                <a href="about_media.html" class="navigation_link">СМИ о нас</a>
+            </li>
+            <li class="navigation_item">
+                <a href="about_thanks.html" class="navigation_link">Благодарности</a>
+            </li>
+            <li class="navigation_item navigation_item_active">
+                <a href="about_contacts.html" class="navigation_link">Контакты</a>
+            </li>
+        </ul>
 
 
         <div class="container">
+            <div class="thanks_text mobile">
+                <p>У детей больных раком – украденное детство. Они борются за жизнь каждый день. К великому сожалению, в этой борьбе нет золотой середины: здесь либо победа, либо поражение. В этой жестокой схватке – нет 2-го шанса на жизнь, нет места ошибкам и любое бездействие может привести к трагедии.</p>
+                <p>Если мы не поддержим, не протянем руку помощи – бой может быть проигран. Вы можете внести свой вклад в лечение ребенка. Пожертвование может быть одноразовым или регулярным.</p>
+            </div>
             <div class="contacts">
-                   <div class="contacts_map">
-                       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d160326.0332022794!2d34.97556201695046!3d31.755808704759392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1542105333315" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-                   </div>
-                   <div class="contacts_info">
-                       <div class="contacts_pay">
-                           <h3>Реквизиты</h3>
-                           <p>№ 26000051520820 (USD)<br>
-                            Код  38994400<br>
-                            МФО 354347<br>
-                            Получатель: БФ "Шанс на<br> жизнь"<br>
-                            Банк: ПАТ КБ "Ощадбанк"</p>
-                       </div>
-                       <form action="" method="post" class="contacts_form">
-                               <input type="text" name="name" placeholder="Имя*">
-                               <input type="text" name="phone" placeholder="Телефон*">
-                               <input type="text" name="email" placeholder="E-mail*">
-                               <select class="contacts_select">
-                                  <option>Тема обращения*</option>
-                                  <option>Пункт 2</option>
-                                </select>
-                               <textarea name="mail" id="" cols="30" rows="10" placeholder="Сообщение*"></textarea>
-                               <input type="submit" value="Отправить">
-                           </form>
-                      <!--https://www.w3schools.com/howto/howto_custom_select.asp-->
-                   </div>
-               </div>
+                <div class="contacts_map">
+                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d160326.0332022794!2d34.97556201695046!3d31.755808704759392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1542105333315" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.667582134192!2d34.752063514904805!3d32.051188027945585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4cb84ed54d89%3A0x7482b7951d6401d0!2sYehuda+Margoza+St+27%2C+Tel+Aviv-Yafo%2C+Israel!5e0!3m2!1sen!2sua!4v1542895478670" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="contacts_info">
+                    <div class="contacts_pay">
+                        <h3>Реквизиты</h3>
+                        <p>№ 26000051520820 (USD)<br> Код 38994400<br> МФО 354347<br> Получатель: БФ "Шанс на жизнь"<br> Банк: ПАТ КБ "Ощадбанк"</p>
+                    </div>
+                    <form action="" method="post" class="contacts_form">
+                        <input type="text" name="name" placeholder="Имя*">
+                        <input type="text" name="phone" placeholder="Телефон*">
+                        <input type="text" name="email" placeholder="E-mail*">
+                        <input type="text" name="subject" placeholder="Тема обращения*">
+                        <textarea name="mail" id="" cols="30" rows="10" placeholder="Сообщение*"></textarea>
+                        <input type="submit" value="Отправить">
+                    </form>
+                    <!--https://www.w3schools.com/howto/howto_custom_select.asp-->
+                </div>
+            </div>
 
         </div>
 

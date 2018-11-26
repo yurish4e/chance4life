@@ -78,6 +78,7 @@
     line-height: 32px;
     font-family: 'GothamPro-Bold';
     transition: 200ms;
+    z-index: 50;
 }
 .nav_lang:hover {
     background-color: $hBlue;

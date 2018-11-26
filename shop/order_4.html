@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="wrapper wrapper_shop_pay">
+    <div class="wrapper">
 
         <!-- header -->
         <header class="header container">
@@ -25,20 +25,28 @@
                 <div class="nav_logo"></div>
                 <!-- menu -->
                 <div class="nav_menu">
-                    <ul class="menu">
-                        <li class="menu_item"><a href="../index.html">Главная</a></li>
-                        <li class="menu_item"><a href="about.html">О фонде</a></li>
+                    <ul class="menu" id="menu">
+                        <li class="menu_item menu_item_current"><a href="index.html">Главная</a></li>
+                        <li class="menu_item"><a href="about/about.html">О фонде</a></li>
                         <li class="menu_item"><a href="#">Наши дети</a></li>
                         <li class="menu_item"><a href="#">Присоединяйтесь</a></li>
-                        <li class="menu_item menu_item_current"><a href="#">Магазин</a></li>
+                        <li class="menu_item"><a href="#">Магазин</a></li>
                     </ul>
                     <!-- lang switch -->
-                    <a href="#" class="nav_lang">RU</a>
+                    <div class="nav_lang">
+                        <span>RU</span>
+                        <div class="nav_lang_menu mobile" id="menu_visible">
+                            <span>EN</span>
+                            <span>HE</span>
+                        </div>
+                    </div>
+                    <span class="nav_close"></span>
+                    <span class="menu_open mobile"></span>
                 </div>
                 <!-- help -->
                 <a href="" class="nav_help">Помочь фонду</a>
                 <!-- social -->
-                <div class="social">
+                <div class="social pc">
                     <a href="#" class="social_fb"></a>
                     <a href="#" class="social_in"></a>
                 </div>
@@ -47,8 +55,7 @@
         <!-- /header -->
 
         <!-- main content -->
-        <div class="container">
-                <ul class="navigation_kids navigation_shop">
+        <ul class="navigation_kids navigation_shop" id="navigation_order_4">
                     <li class="navigation_item">
                         <a href="about_thanks.html" class="navigation_link">Продолжить покупки</a>
                     </li>
@@ -57,24 +64,20 @@
                         <!--счётчик корзины-->
                         <span class="navigation_cart">5</span>
                     </li>
-                    <li class="navigation_item ">
+                    <li class="navigation_item">
                         <a href="about_thanks.html" class="navigation_link">Оформление заказа</a>
                     </li>
                     <li class="navigation_item navigation_item_active">
                         <a href="about_thanks.html" class="navigation_link">Оплатить заказ</a>
                     </li>
                 </ul>
-                 <div class="payment">
+         <div class="payment">
                     <div class="payment_desc">
                         <h4>Введите данные платежа</h4>
                          <p>Оплата через PayPal; вы можете произвести оплату с помощью вашей банковской карты если у вас нет аккаунта в системе PayPal.</p>
                     </div>
                      
                  </div>
-                
-        </div>
-        <!-- /container -->
-        
         <!-- /main content -->
     </div>
 
@@ -84,10 +87,10 @@
             <!-- footer item -->
             <div class="footer_item">
                 <div class="footer_logo"></div>
-                <p>Фонд помощи онкобольным детям. Фонд - некомерческая организация.</p>
+                <p>Фонд помощи онкобольным<br class="mobile"> детям. Фонд - некомерческая<br class="mobile"> организация.</p>
             </div>
             <!-- footer item -->
-            <div class="footer_item">
+            <div class="footer_item pc">
                 <ul class="footer_menu">
                     <li class="footer_menu_item"><a href="#">Главная</a></li>
                     <li class="footer_menu_item"><a href="#">О фонде</a></li>
@@ -102,8 +105,8 @@
             </div>
             <!-- footer item -->
             <div class="footer_item">
-                <h3 class="footer_title">Соцсети:</h3>
-                <p>За нами Вы также можете следить в наших социальных сетях:</p>
+                <h3 class="footer_title pc">Соцсети:</h3>
+                <p class="pc">За нами Вы также можете следить в наших социальных сетях:</p>
                 <div class="social">
                     <a href="#" class="social_fb"></a>
                     <a href="#" class="social_in"></a>
@@ -111,13 +114,13 @@
             </div>
             <!-- footer item -->
             <div class="footer_item">
-                <h3 class="footer_title">Рассылка:</h3>
-                <form action="" class="footer_sub">
+                <h3 class="footer_title pc">Рассылка:</h3>
+                <form action="" class="footer_sub pc">
                     <input type="text" name="textfield" class="footer_input">
                     <input type="button" name="button" class="footer_button" value="ПОДПИСАТЬСЯ">
                 </form>
                 <div class="developed">
-                    <p><span>Разработано </span><a href="#">BeOnline.Studio</a></p>
+                    <p><span>Разработано </span><br class="mobile"><a href="#">BeOnline.Studio</a></p>
                 </div>
             </div>
 

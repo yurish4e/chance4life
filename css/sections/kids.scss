@@ -1,7 +1,7 @@
 //меню
 .navigation_kids {
     width: 445px;
-    margin: 0 auto 80px;
+    margin: 0 auto 50px;
     padding: 0;
     @include flexbox();
     @include justify-content(space-between);
@@ -66,6 +66,13 @@
     .kids_help {
         opacity: 1;
     }
+    .kids_content {
+        padding: 0;
+        p {
+            margin: 0;
+        }
+    }
+    
 }
 //--------     персональная страница 
 ////////////////////////////////////
@@ -121,6 +128,7 @@ box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
     @include flex-direction(column);
     @include justify-content(space-between);
     width: 290px;
+    padding: 10px 0 30px;
     h2 {
         font-size: 24px;
         font-family: 'GothamPro-Bold';
@@ -129,6 +137,9 @@ box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
     }
     span {
         font-size: 12px;
+    }
+    p {
+        margin-top: 15px;
     }
 }
 //кнопка
@@ -154,6 +165,11 @@ box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
     margin: 0 auto 80px;
     @include flexbox();
     @include justify-content(space-between);
+    .subscribe_button:hover {
+        -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+    }
 }
 .personal_wrapper_img {
     @include flexbox();
@@ -217,16 +233,28 @@ box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.32);
 //подробная инфа, которая отображается при клике на personal_info
 .personal_full {
     height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+personal_full_mobile {
+    overflow: hidden;
+    height: 0;
 }
 .personal_show {
     height: auto;
     margin-bottom: 80px;
+    opacity: 1;
+    z-index: 10;
+    display: inline-block;
 }
 //персональная страница со собранными средствами
 //////////////////////////////
-.donate_progress {
+.personal_wrapper_full {
+    .donate_progress {
     width: 100%;
 }
+}
+
 .subscribe_button_unactive {
     background-color: #C4C4C4;
     cursor: default;
@@ -242,18 +270,7 @@ box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.32);
         background-color: #F7F7F7;
         border-radius: 30px;
     }
-    .kids_item:hover {
-        background-color: transparent;
-        border: 2px solid transparent;
-        box-shadow: none;
-    .kids_img_wrapper {
-        background-color: #F7F7F7;
-    }
-    .kids_help {
-        opacity: 0;
-        z-index: -1;
-    }
-}
+    
     
 }
 
@@ -266,18 +283,6 @@ box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.32);
 .kids_img_wrapper {
         background-color: #ADE5FF;
     }
-    .kids_item:hover {
-        background-color: transparent;
-        border: 2px solid transparent;
-        box-shadow: none;
-    .kids_img_wrapper {
-        background-color: #ADE5FF;
-    }
-    .kids_help {
-        opacity: 0;
-        z-index: -1;
-    }
-}
     
     .kids_img_wrapper {
         padding-top: 30px;
@@ -294,7 +299,7 @@ box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.32);
         margin: 0 55px;
     }
     .kids_item {
-        height: 300px;
+        height: 330px;
         width: 30%;
         margin-bottom: 20px;
         @include flexbox();
@@ -318,6 +323,66 @@ box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.32);
     background: url(../img/kids/baloon.svg) center no-repeat;
     
 }
-
-
+//popup
+.popup_personal {
+    width: 1060px;
+    height: 380px;
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    transition: 200ms;
+    padding-top: 60px;
+    opacity: 0;
+    z-index: -5;
+    border-radius: 10px;
+}
+.popup_personal_content {
+    position: relative;
+    background-color: $lBlue;
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+}
+.popup_personal_close {
+    position: absolute;
+    top: -50px;
+    right: 20px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: $lBlue;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(../img/ico/close_white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 200ms;
+}
+.popup_personal_close:hover {
+    background-color: darken($lBlue, 10%);
+}
+.popup_personal_show {
+    display: inline-block;
+    opacity: 1;
+    z-index: 5;
+    top: 30%;
+    left: 15%;
+}
+.popup_personal_show_mob {
+    height: 706px!important;
+    width: 100%!important;
+    left: 0!important;
+    display: inline-block;
+    opacity: 1;
+    z-index: 100;
+    .popup_personal_content {
+        position: relative;
+        height: 656px;
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+.blur {
+    filter: blur(5px);
+}
 

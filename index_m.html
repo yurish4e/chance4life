@@ -13,10 +13,26 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        // Plugin language (Hebrew - Default: he, English: en)
+        nl_lang = "he";
+        // Plugin position (Top left - Default: tl, Bottom left: bl, Top right: tr, Bottom right: br)
+        nl_pos = "tr";
+        // Plugin info page (direct link to your accessibility info page on your website)
+        nl_link = "0";
+        // Plugin color (to match your website main color out of 10 colors available)
+        nl_color = "blue";
+        // Plugin bar layout (as a bar or as a button)
+        nl_compact = "0";
+        // Plugin menus layout (open one menu at a time)
+        nl_accordion = "0";
+    </script>
+    <script type="text/javascript" charset="utf-8" src="test/nagishli.js" defer></script>
 </head>
 
 <body>
-    <div class="wrapper wrapper_about_2">
+    <div class="wrapper wrapper_index wrapper_index_mob">
+        <div class="urgent_art mobile"></div>
 
         <!-- header -->
         <header class="header container">
@@ -57,7 +73,6 @@
         <!-- /container -->
         <div class="container">
             <div class="chance pc">
-
                 <span></span>
                 <div class="chance_wrap">
                     <div class="chance_slide">
@@ -83,7 +98,7 @@
                         </div>
 
                     </div>
-                    <div class="chance_help">
+                    <div class="chance_help" id="chance_help">
                         <!--Здесь шарик-->
                     </div>
                 </div>
@@ -93,8 +108,41 @@
                     <p>на</p>
                     <p>жизнь!"</p>
                 </div>
+                <!--popup-->
+                <div class="popup_index" id="popup_index">
+                    <div class="popup_index_close" id="popup_index_close"></div>
+                </div>
+            </div>
+            <div class="chance_mobile mobile">
+                <h3>Излечение Детей Усилиями Нашего Фонда</h3>
+                <div class="chance_mobile_slider">
+                    <div class="slide_item slide_item_1">
+                        <img src="img/slide_mob/1.png" alt="">
+                    </div>
+                    <div class="slide_item slide_item_2">
+                        <img src="img/slide_mob/2.png" alt="">
+                    </div>
+                    <div class="slide_item slide_item_3">
+                        <img src="img/slide_mob/3.png" alt="">
+                    </div>
+                    <div class="slide_item slide_item_4">
+                        <img src="img/slide_mob/4.png" alt="">
+                    </div>
+                    <div class="slide_item slide_item_5">
+                        <img src="img/slide_mob/5.png" alt="">
+                    </div>
+                    <div class="slide_item slide_item_6">
+                        <img src="img/slide_mob/6.png" alt="">
+                    </div>
+                </div>
+                <!--popup-->
+                <div class="popup_index_mob" id="popup_index_mob">
+                    <div class="popup_index_close" id="popup_index_close_mob"></div>
+                </div>
+                <a href="#" class="chance_help_button" id="chance_help_mob">Помочь проекту</a>
             </div>
             <div class="urgent">
+                <div class="urgent_art_left mobile"></div>
                 <h1 class="urgent_title">Срочный сбор средств</h1>
                 <p class="title_description mobile">Наши новости и события, которые могут быть Вам интересны</p>
                 <div class="urgent_content">
@@ -222,7 +270,7 @@
             <!-- footer item -->
             <div class="footer_item">
                 <div class="footer_logo"></div>
-                <p>Фонд помощи онкобольным детям. Фонд - некомерческая организация.</p>
+                <p>Фонд помощи онкобольным<br class="mobile"> детям. Фонд - некомерческая<br class="mobile"> организация.</p>
             </div>
             <!-- footer item -->
             <div class="footer_item pc">

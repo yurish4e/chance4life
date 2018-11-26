@@ -189,6 +189,9 @@
 
 .shop_add:hover {
     background-color: darken($lBlue, 10%);
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
 }
 
 //страница товара
@@ -465,7 +468,11 @@
     transition: 200ms;
     cursor: pointer;
 }
-
+.cart_remove {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+}
 //item при наведении
 .cart_item:hover {
     transition: 200ms;
@@ -620,6 +627,7 @@
     input[type=submit] {
         margin: 0;
         background-color: $lBlue;
+        text-transform: uppercase;
         color: #fff;
         cursor: pointer;
         padding: 0;
@@ -650,6 +658,7 @@ box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
 }
 
 .order_register {
+    text-transform: uppercase;
     display: inline-block;
     width: 260px;
     height: 50px;
